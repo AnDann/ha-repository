@@ -41,8 +41,12 @@ options:
 panel_icon: mdi:sitemap
 ports:
   80/tcp: 1880
+  2052/tcp: 2052
+  2053/tcp: 2053
 ports_description:
   80/tcp: Web interface
+  2052/tcp: BINRPC interface
+  2053/tcp: XMLRPC interface
 schema:
   certfile: str
   credential_secret: password
@@ -67,5 +71,5 @@ schema:
   theme: list(default|aurora|cobalt2|dark|dracula|espresso-libre|midnight-red|monoindustrial|monokai|oceanic-next|oled|solarized-dark|solarized-light|tokyo-night|zenburn)?
 slug: nodered
 uart: true
-url: https://github.com/hassio-addons/addon-node-red
+url: https://github.com/AnDann/addon-node-red
 version: 13.3.1
